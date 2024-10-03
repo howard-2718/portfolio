@@ -9,13 +9,14 @@ canvas {
 
 body {
     font-family: Montserrat;
-    /* background-color: #fdfdfd; */
 }
 
 .page-body {
-    width: 40%;
-    min-width: 800px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0.5em;
+    background-color: #fdfdfd;
 }
 
 .page-title {
@@ -29,6 +30,7 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .button {

@@ -7,6 +7,7 @@ import * as PIXI from 'pixi.js';
     await app.init({
         width: window.innerWidth,
         height: window.innerHeight,
+        resizeTo: window,
         background: '#fdfdfd',
     });
 
@@ -21,24 +22,29 @@ import * as PIXI from 'pixi.js';
         return amplitude * Math.sin(frequency * x + time);
     }
 
+    let wave_y = 0;
+
     app.ticker.add(() => {
         timer += 0.05;
+
+        if(window.location.pathname === "/index.html") {
+            wave_y = app.screen.height - 100;
+        }
+        else {
+            wave_y = app.screen.height / 2;
+        }
 
         wave.clear();
 
         for (let i = 0; i < 5; i++ ) {
-            wave.moveTo(0, app.screen.height - 100 + i * 2);
+            wave.moveTo(0, wave_y + i * 2);
 
             for (let x = 0; x < app.screen.width; x++) {
-                const y = app.screen.height - 100 + i * 2 + sineWave(x, 20 + i * 5, 0.02 + i * 0.01, timer);
+                const y = wave_y + i * 2 + sineWave(x, 20 + i * 5, 0.02 + i * 0.01, timer);
                 wave.lineTo(x, y);
             }
         }
 
         wave.stroke({ width: 1, color: '#101010' });
-    });
-
-    window.addEventListener('resize', () => {
-        app.screen.resize(window.innerWidth, window.innerHeight);
     });
 })();
