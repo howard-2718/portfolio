@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Howard's Site</title>
+        <!--<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">-->
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script type="module" src="index.js"></script>
+
+        <div class="page-title">
+            <h1>Howard's Projects</h1>
+        </div>
+
+        <div class="page-body">
+            <div class="top-buttons">
+                <a href="resume.pdf" class="button" target="_blank">Resume</a>
+                <a href="../index.html" class="button">Back</a>
+                <a href="https://www.linkedin.com/in/howard-ubceng26/" class="button" target="_blank">LinkedIn</a>
+                <a href="mailto:howard.li.2718@gmail.com" class="button2">howard.li.2718@gmail.com</a>
+            </div>
+
+            <hr> <!--Horizontal line-->
+
+            <br>
+            <p>Thanks for checking out my projects! Click on a project to learn more about it.</p>
+
+            <div class="project-menu">
+                <button class="project-button">Japanese Language-Learning Blog</button>
+                <div class="panel">
+                    <p><b>Description:</b> An individual project, designing a website using the VitePress static site generator to host a blog dedicated to Japanese language-learning.</p>
+                    <p>The blog can be accessed <a href="https://jouzunare.neocities.org" target="_blank">here</a>, and the GitHub repository <a href="https://github.com/howard-2718/jouzunare" target="_blank">here</a>.</p>
+                    <p>Being an individual project, I was responsible for all tasks, including writing code, troubleshooting, writing the blog contents, preparing media files, and so on.</p>
+                    
+                    <div class="image-slider">
+                        <!--Image slider goes here.-->
+                    </div>
+
+                    <p><b>Relevant Skills:</b> HTML/CSS/JS, Vue.js, Vite + VitePress, Static Site Generation, Version Control, Frontend Development, Website Hosting.</p>    
+                </div>
+
+                <button class="project-button">Machine Learning Virtual Robot</button>
+                <div class="panel">
+                    <p><b>Description:</b> A pair-based project to program a robot capable of navigating a virtual environment in a Gazebo (physics) simulation. Emphasis was placed on the robot's ability to recognize and read letters on signs. To do this, we trained a convolutional neural network (CNN).</p>
+                    <p>I implemented computer vision functionality, such as edge detection, color detection, and motion detection. I also worked with my partner to design a MVC GUI for testing purposes and to train a CNN for optical character recognition. The neural network was very consistent, correctly identifying letters over 99% of the time.</p>
+                    
+                    <div class="image-slider">
+                        <!--Image slider goes here.-->
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Python, Image Processing, Deep Learning, CNNs, OpenCV, PyQt, NumPy, OCR, Linux + Bash.</p>                 
+                </div>
+
+                <!--
+                    
+                    <button class="project-button">Autonomous Tape-Following Robot</button>
+                    <button class="project-button">Numerical Heat Flow Simulation</button>
+                    <button class="project-button">Engineering Design Teams</button>
+                    <button class="project-button">X (Twitter) Pub-Sub Framework</button>
+                    <button class="project-button">Servo Motor Control Loop Circuit</button>
+                    <button class="project-button">Interactive Visual (Kinetic) Novel</button>
+                    <button class="project-button">Mathematics Blog</button>
+                    <button class="project-button">Digital Music Production</button>
+                -->
+            </div>
+
+            <script>
+                var proj_b = document.getElementsByClassName("project-button");
+                var i;
+                
+                for (i = 0; i < proj_b.length; i++) {
+                  proj_b[i].addEventListener("click", function() {
+                    for (var j = 0; j < proj_b.length; j++) {
+                        if (proj_b[j] !== this) {
+                            proj_b[j].classList.remove("active");
+                            var otherPanel = proj_b[j].nextElementSibling;
+                            otherPanel.style.maxHeight = null;
+                        }
+                    }
+
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
+        </div>
+    </body>
+</html>
