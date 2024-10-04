@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Howard's Site</title>
+        <!--<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">-->
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+      <script type="module" crossorigin src="/portfolio/assets/index-Cbshp3VJ.js"></script>
+      <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BnMFmnfO.css">
+    </head>
+    <body>
+
+        <div class="page-title">
+            <h1>Howard's Projects</h1>
+        </div>
+
+        <div class="page-body">
+            <div class="top-buttons">
+                <a href="resume.pdf" class="button" target="_blank">Resume</a>
+                <a href="../index.html" class="button">Home</a>
+                <a href="https://www.linkedin.com/in/howard-ubceng26/" class="button" target="_blank">LinkedIn</a>
+                <a href="mailto:howard.li.2718@gmail.com" class="button2">howard.li.2718@gmail.com</a>
+            </div>
+
+            <hr> <!--Horizontal line-->
+
+            <br>
+            <p style="text-align: center;">Thanks for checking out my projects!<p>
+
+            <p style="text-align: center;">Click on a project tab to learn more about it, and click on an image to zoom in!</p>
+            <br>
+
+            <div class="project-menu">
+                <button class="project-button">Japanese Language-Learning Blog</button>
+                <div id="jznr" class="panel">
+                    <p><b>Description:</b> An individual project, designing a website using the VitePress static site generator to host a blog dedicated to Japanese language acquisition.</p>
+                    <p>Being an individual project, I was responsible for all tasks, including writing code, troubleshooting, writing the blog contents, preparing media files, and so on.</p>
+                    <p></p>
+
+                    <p>The blog can be accessed <a href="https://jouzunare.neocities.org" target="_blank">here</a>, and the GitHub repository <a href="https://github.com/howard-2718/jouzunare" target="_blank">here</a>.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/jznr_1-BRp5K134.png" alt="Supporting image for Japanese Language-Learning Blog." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/jznr_2-C2Ov_QGu.png" alt="Supporting image for Japanese Language-Learning Blog." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+
+                    <p><b>Relevant Skills:</b> HTML/CSS/JS, Vue.js, Vite + VitePress, Static Site Generation, Content Creation, Version Control, Frontend Development, UI/UX, Website Hosting.</p>    
+                </div>
+
+                <button class="project-button">Machine Learning Virtual Robot</button>
+                <div class="panel">
+                    <p><b>Description:</b> A pair-based project to program a robot capable of navigating a virtual environment in a Gazebo (physics) simulation. Emphasis was placed on the robot's ability to recognize and read letters on signs. To do this, we trained a convolutional neural network (CNN).</p>
+                    <p>I implemented computer vision functionality, such as edge detection, color detection, and motion detection. I also worked with my partner to design a MVC GUI for testing purposes and to train a CNN for optical character recognition. The neural network was very consistent, correctly identifying letters over 99% of the time.</p>
+
+                    <p>The robot is also able to drive autonomously thanks to its image processing capabilities (ability to detect road edges) and a PID control loop.</p>
+                    
+                    <p>At an end-of-term robot competition, my partner and I placed 3rd out of ~20 teams.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/mlvr_1-CQ-4JNNE.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/mlvr_2-D2i1whhk.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/mlvr_3-CC93HNxG.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Python, Image Processing, Deep Learning, PID, CNNs, OpenCV, PyQt, NumPy, OCR, Linux + Bash.</p>                 
+                </div>
+
+                <button class="project-button">Autonomous Tape-Following Robot</button>
+                <div class="panel">
+                    <p><b>Description:</b> A team-based project to design a robot capable of following tape around a race track. This multi-disciplinary project includes mechanical and electrical engineering, software development, control theory, and so on.</p>
+                    <p>I programmed a PID control loop and a signal convolution script for IR detection using the STM32 microprocessor and Arduino. I also worked with electrical lab equipment (oscilloscopes, function generators, etc.) to analyze electrical circuits.</p>
+                    <p>In terms of hands-on skills, I became experienced working with wire crimps, soldering irons, laser cutters, and 3D printers.</p>
+                    <p>Ultimately, our team's robot was able to drive significantly faster and more smoothly than most teams, and we were semi-finalists in a competition pitting all the robots against each other.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/atfr_1-COvFOPbm.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/atfr_2-4DSLsbBK.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/atfr_3-7NrESLM6.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> C/C++, Arduino, STM32 Microprocessor, CAD (Onshape), Signal Processing, Control Theory, Soldering, Wire Crimping, Circuit Design, Lab Equipment.</p>
+                </div>
+
+                <button class="project-button">FPGA Designs/Projects</button>
+                <div class="panel">
+                    <p><b>Description:</b> In my microcomputers course, I designed the following FPGA designs as part of my laboratory work. For hardware, I used the DE0-CV FPGA board, and on the software side, I worked in Quartus and wrote code in the VDHL language.</p>
+                    <p>Examples of projects completed include a 24-hour clock, scrolling digits display, and 8-bit calculator (the four basic operations, modulo, and square root).</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/fpga_1-BNu6Pyws.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/fpga_2-osWnfrNB.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/fpga_3-BmNIXpfC.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Low-Level Programming, FPGA Design, Quartus, VDHL, Assembly, I/O Processing.</p>
+                </div>
+
+                <button class="project-button">Numerical Heat Flow Simulation & Presentation</button>
+                <div class="panel">
+                    <p><b>Description:</b> A research project, analyzing a topic in thermodynamics. This was the final project of my thermodynamics course, and was compiled into a presentation.</p>
+                    <p>My research topic was on the numerical analysis of heat flow in high-purity copper wires.</p>
+                    <p>I used SageMath (similar to MATLAB) to perform nonlinear regression on data extracted from graphs, and I also numerically solved a non-linear, second order ODE using the Runge-Kutta method to obtain the equilibrium temperature distribution.</p>
+                    <p>To design a technical slideshow, I leveraged my skills with LaTeX to create a set of Beamer (presentation document class) slides.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/nhfs_1-iV68xaYx.png" alt="Supporting image for Numerical Heat Flow Simulation & Presentation." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/nhfs_2-BET9ncoG.png" alt="Supporting image for Numerical Heat Flow Simulation & Presentation." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Thermodynamics, Numerical Methods, Non-linear Regression, Differential Equations, Technical Communication, SageMath, LaTeX, Beamer.</p>
+                </div>
+
+                <button class="project-button">Engineering Design Teams</button>
+                <div class="panel">
+                    <p><b>Description:</b> Throughout my time at UBC, I have been a member of two student-run engineering design teams.</p>
+                    <p>The first design team I was a part of was <a href="https://ubcsteelbridge.ca/" target="_blank">UBC Steel Bridge</a>, whose annual goal is to design a 1:10 scale steel bridge. I was a member of the Drafting sub-team from 2021 to 2023—in 2022, UBC placed 2nd at the Canadian National Steel Bridge Competition.</p>
+                    <p>During my time with UBC Steel Bridge, I worked with Autodesk AutoCAD and Inventor to create 3D models and drawings for bridge parts, also utilizing Microsoft Excel to calculate distances and part sizes using trigonometric formulae. I was able to integrate into the team well and contributed actively to design discussions.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/sbdt_1-CkkyEwoD.png" alt="Supporting image for Engineering Design Teams (UBC Steel Bridge)." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/sbdt_2-CZ9LlNpP.png" alt="Supporting image for Engineering Design Teams (UBC Steel Bridge)." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+
+                    <p>The second is <a href="https://www.ubcorbit.com/" target="_blank">UBC Orbit</a>, a satellite design team with plans to launch a CubeSat into space in 2027. I joined the Attitude and Orbit Control Systems (AOCS) sub-team in 2024, and am currently a member.</p>
+                    <p>With UBC Orbit, I use our team's in-house Python physics simulation and my knowledge of kinematics and classical mechanics to help control the satellite's positioning. The project is very intricate, and I appreciate how everyone's work combines to form a whole that is more than the sum of its parts.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/rbdt_1-BqR6WhFe.png" alt="Supporting image for Engineering Design Teams (UBC Orbit)." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Autodesk AutoCAD/Inventor, 3D Modelling, Engineering Drawings, Python, Zero-Gravity Physics Simulations, Rigid Body Dynamics.</p>
+                </div>
+
+                <button class="project-button">X (Twitter) Pub-Sub Framework</button>
+                <div class="panel">
+                    <p><b>Description:</b> A team-based software project to create a multithreaded Java framework that interfaces with the X (Twitter) API to pull tweets and store them in a time-sensitive queue. Emphasis was placed on the importance of unit testing, which was done using the JUnit library.</p>
+                    <p>I utilized Gradle as the main project build tool and worked with JUnit to perform blackbox/whitebox unit tests. I also made use of advanced Java data structures such as DelayQueue and ConcurrentHashMap.</p>
+                    <p>By writing comprehensive unit tests, I was able to obtain over 90% code coverage.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/cpmp_1-BftLzA2n.png" alt="Supporting image for X (Twitter) Pub-Sub Framework." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/cpmp_2-BCHnjrnm.png" alt="Supporting image for X (Twitter) Pub-Sub Framework." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Java, Gradle, JUnit, OOP, Multithreading, Network Programming, Unit Testing, Blackbox/Whitebox Tests, Backend Development.</p>
+                </div>
+
+                <button class="project-button">Servo Motor Control Loop Circuit</button>
+                <div class="panel">
+                    <p><b>Description:</b> The final project of my experimental laboratory course.</p>
+                    <p>The goal was to design a circuit capable of regulating the angular velocity of a servo motor. The velocity is printed to a 7-segment display and controlled using an error signal.</p>
+                    <p>I handled lab tools including function generators, waveform analyzers, and DMMs to construct the entire circuit. I also worked with various circuit components, such as transistors, counters, potentiometers, DACs, diodes, capacitors, buffers, etc.</p>
+                    <p>To make sure my work was both understandable and reproducible, I maintained well-documented lab notes. My experience with effective note-taking has since served me well in various endeavours (work, school, and so on).</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/smcc_1-CrM8IYiD.png" alt="Supporting image for Servo Motor Control Loop Circuit." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/smcc_2-ClYlYMwI.png" alt="Supporting image for Servo Motor Control Loop Circuit." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/smcc_3-CkrlOd61.png" alt="Supporting image for Servo Motor Control Loop Circuit." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Lab Equipment, Circuit Wiring, Oscilloscopes, Technical Troubleshooting, Control Loops, Digital & Analog Circuit Components.</p>
+                </div>
+
+                <button class="project-button">Interactive Visual (Kinetic) Novel</button>
+                <div class="panel">
+                    <p><b>Description:</b> A team-based effort to develop a visual novel using the Ren'Py game development framework.</p>
+                    <p>Visual (or kinetic) novels are interactive story-driven experiences that blend engaging narratives with captivating visual art/audio and player-driven decision-making.</p>
+                    <p>I led a three person team and was responsible for the programming, music, and background graphics. I was also partially responsible for the dialogue. Other team members worked on dialogue and character graphics.</p>
+                    <p>I'd like to highlight the soundtrack in particular, which you can take a listen to <a href="https://drive.google.com/drive/folders/1qLqF2QPEaRT4Tiwnm6A4v4o8QPGsaIZ4?usp=sharing" target="_blank">here</a>.</p>
+
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/ivkn_1-DVOdwexf.png" alt="Supporting image for Interactive Visual (Kinetic) Novel." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/ivkn_2-BF1-YAg6.png" alt="Supporting image for Interactive Visual (Kinetic) Novel." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Software Development, Game Development (Python), Graphic Design, Image Editing, UI/UX, Creative Writing, Music Production</p>
+                </div>
+
+                <button class="project-button">Mathematics Blog</button>
+                <div class="panel">
+                    <p><b>Description:</b> I like to self-study various topics in math. To share my findings, as well as some of my original thoughts, I started a blog where I post about mathematical ideas, titled <em>Romance on a Parabola</em>.</p>
+                    <p>My goal was to design it to appear similar to online math textbooks, so I used MathJax and the PreTeXt LaTeX library. It's a great opportunity for me to practice technical communication, and I also get to work with GitHub, XML, and HTML/CSS/JS.</p>
+                    <p>The blog can be accessed <a href="https://howard-2718.github.io/frontmatter.html" target="_blank">here</a>.</p>
+                    <p>The final image is of a Julia set, which I rendered in the Windows Powershell command line (CLI).</p>
+
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/roap_1-BV-0zxVL.png" alt="Supporting image for Mathematics Blog." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/roap_2-BAB09aD8.png" alt="Supporting image for Mathematics Blog." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/roap_3-BvcbJo_H.png" alt="Supporting image for Mathematics Blog." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Applied Mathematics, Technical Communication, Website Design, LaTeX + PreTeXt, MathJax, Software Development.</p>
+                </div>
+
+                <button class="project-button">Musical Composition & Production</button>
+                <div class="panel">
+                    <p><b>Description:</b> My favorite creative hobby is scoring and producing music.</p>
+                    <p>I am proficient in the use of musical notation software, e.g. MuseScore, Finale. I am also experienced with producing music in digital audio workstations such as REAPER and FL Studio.</p>
+                    <p>I use industry standard tools, including Kontakt 7, Ozone 10, Synthesizer V, and Xfer OTT, among others.</p>
+                    <p>As for genres, I write music in a variety of styles: pop, orchestral, piano solo, ... Please check out my work via <a href="https://www.youtube.com/@redaster1583" target="_blank">YouTube</a>.</p>
+
+                    <div class="images">
+                        <hr>
+                        <img src="/portfolio/assets/musc_1-BsXOykTv.png" alt="Supporting image for Musical Composition & Production." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/musc_2-CLyqP6hb.png" alt="Supporting image for Musical Composition & Production." onclick="openModal(this)" />
+                        <hr>
+                        <img src="/portfolio/assets/musc_3-C57VtXAL.png" alt="Supporting image for Musical Composition & Production." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Songwriting, Music Mixing + Mastering, Video Editing, Musical Notation + Scoring, Orchestration, MuseScore, REAPER, FL Studio, VST/VST3.</p>
+                </div>
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="caption" id="imageCaption"></div>
+                <img class="modal-content" id="enlargedImage">
+            </div>
+
+            <script>
+                // Function to open modal
+                function openModal(imgElement) {
+                    var modal = document.getElementById("imageModal");
+                    var modalImg = document.getElementById("enlargedImage");
+                    var captionText = document.getElementById("imageCaption");
+                    
+                    modal.style.display = "block";
+                    modalImg.src = imgElement.src;
+                    captionText.innerHTML = imgElement.alt;
+                }
+
+                // Function to close modal
+                function closeModal() {
+                    var modal = document.getElementById("imageModal");
+                    modal.style.display = "none";
+                }
+
+                // Accordion menu
+                var proj_b = document.getElementsByClassName("project-button");
+                var i;
+                
+                for (i = 0; i < proj_b.length; i++) {
+                  proj_b[i].addEventListener("click", function() {
+                    for (var j = 0; j < proj_b.length; j++) {
+                        if (proj_b[j] !== this) {
+                            proj_b[j].classList.remove("active");
+                            var otherPanel = proj_b[j].nextElementSibling;
+                            otherPanel.style.maxHeight = null;
+                        }
+                    }
+
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
+        </div>
+    </body>
+</html>
