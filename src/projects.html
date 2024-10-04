@@ -30,21 +30,27 @@
             <br>
             <p style="text-align: center;">Thanks for checking out my projects!<p>
 
-            <p style="text-align: center;">Click on a project tab to learn more about it.</p>
+            <p style="text-align: center;">Click on a project tab to learn more about it, and click on an image to zoom in!</p>
             <br>
 
             <div class="project-menu">
                 <button class="project-button">Japanese Language-Learning Blog</button>
                 <div class="panel">
                     <p><b>Description:</b> An individual project, designing a website using the VitePress static site generator to host a blog dedicated to Japanese language acquisition.</p>
-                    <p>The blog can be accessed <a href="https://jouzunare.neocities.org" target="_blank">here</a>, and the GitHub repository <a href="https://github.com/howard-2718/jouzunare" target="_blank">here</a>.</p>
                     <p>Being an individual project, I was responsible for all tasks, including writing code, troubleshooting, writing the blog contents, preparing media files, and so on.</p>
+                    <p></p>
+
+                    <p>The blog can be accessed <a href="https://jouzunare.neocities.org" target="_blank">here</a>, and the GitHub repository <a href="https://github.com/howard-2718/jouzunare" target="_blank">here</a>.</p>
                     
-                    <div class="image-slider">
-                        <!--Image slider goes here.-->
+                    <div class="images">
+                        <hr>
+                        <img src="images/jznr_1.png" alt="Supporting image for Japanese Language-Learning Blog." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/jznr_2.png" alt="Supporting image for Japanese Language-Learning Blog." onclick="openModal(this)" />
+                        <hr>
                     </div>
 
-                    <p><b>Relevant Skills:</b> HTML/CSS/JS, Vue.js, Vite + VitePress, Static Site Generation, Version Control, Frontend Development, Website Hosting.</p>    
+                    <p><b>Relevant Skills:</b> HTML/CSS/JS, Vue.js, Vite + VitePress, Static Site Generation, Content Creation, Version Control, Frontend Development, Website Hosting.</p>    
                 </div>
 
                 <button class="project-button">Machine Learning Virtual Robot</button>
@@ -54,8 +60,16 @@
 
                     <p>The robot is also able to drive autonomously thanks to its image processing capabilities (ability to detect road edges) and a PID control loop.</p>
                     
-                    <div class="image-slider">
-                        <!--Image slider goes here.-->
+                    <p>At an end-of-term robot competition, my partner and I placed 3rd out of ~20 teams.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/mlvr_1.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/mlvr_2.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/mlvr_3.png" alt="Supporting image for Machine Learning Virtual Robot." onclick="openModal(this)" />
+                        <hr>
                     </div>
                     
                     <p><b>Relevant Skills:</b> Python, Image Processing, Deep Learning, PID, CNNs, OpenCV, PyQt, NumPy, OCR, Linux + Bash.</p>                 
@@ -63,22 +77,84 @@
 
                 <button class="project-button">Autonomous Tape-Following Robot</button>
                 <div class="panel">
-                    <p>temp</p>
+                    <p><b>Description:</b> A team-based project to design a robot capable of following tape around a race track. This multi-disciplinary project includes mechanical and electrical engineering, software development, control theory, and so on.</p>
+                    <p>I programmed a PID control loop and a signal convolution script for IR detection using the STM32 microprocessor and Arduino. I also worked with electrical lab equipment (oscilloscopes, function generators, etc.) to analyze electrical circuits.</p>
+                    <p>In terms of hands-on skills, I became experienced working with wire crimps, soldering irons, laser cutters, and 3D printers.</p>
+                    <p>Ultimately, our team's robot was able to drive significantly faster and more smoothly than most teams, and we were semi-finalists in a competition pitting all the robots against each other.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/atfr_1.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/atfr_2.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/atfr_3.png" alt="Supporting image for Autonomous Tape-Following Robot." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> C/C++, Arduino, STM32 Microprocessor, Signal Processing, Control Theory, Soldering, Wire Crimping, Circuit Design, Lab Equipment.</p>
                 </div>
 
                 <button class="project-button">FPGA Designs/Projects</button>
                 <div class="panel">
-                    <p>temp</p>
+                    <p><b>Description:</b> In my microcomputers course, I designed the following FPGA designs as part of my laboratory work. For hardware, I used the DE0-CV FPGA board, and on the software side, I worked in Quartus and wrote code in the VDHL language.</p>
+                    <p>Examples of projects completed include a 24-hour clock, scrolling digits display, and 8-bit calculator (the four basic operations, modulo, and square root).</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/fpga_1.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/fpga_2.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/fpga_3.png" alt="Supporting image for FPGA Designs/Projects." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Low-Level Programming, FPGA Design, Quartus, VDHL, Assembly, I/O Processing.</p>
                 </div>
 
                 <button class="project-button">Numerical Heat Flow Simulation & Presentation</button>
                 <div class="panel">
-                    <p>temp</p>
+                    <p><b>Description:</b> A research project, analyzing a topic in thermodynamics. This was the final project of my thermodynamics course, and was compiled into a presentation.</p>
+                    <p>My research topic was on the numerical analysis of heat flow in high-purity copper wires.</p>
+                    <p>I used SageMath (similar to MATLAB) to perform nonlinear regression on data extracted from graphs, and I also numerically solved a non-linear, second order ODE using the Runge-Kutta method to obtain the equilibrium temperature distribution.</p>
+                    <p>To design a technical slideshow, I leveraged my skills with LaTeX to create a set of Beamer (presentation document class) slides.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/nhfs_1.png" alt="Supporting image for Numerical Heat Flow Simulation & Presentation." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/nhfs_2.png" alt="Supporting image for Numerical Heat Flow Simulation & Presentation." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Thermodynamics, Numerical Methods, Non-linear Regression, Differential Equations, Technical Communication, SageMath, LaTeX, Beamer.</p>
                 </div>
 
                 <button class="project-button">Engineering Design Teams</button>
                 <div class="panel">
-                    <p>temp</p>
+                    <p><b>Description:</b> Throughout my time at UBC, I have been a member of two student-run engineering design teams.</p>
+                    <p>The first design team I was a part of was <a href="https://ubcsteelbridge.ca/" target="_blank">UBC Steel Bridge</a>, whose annual goal is to design a 1:10 scale steel bridge. I was a member of the Drafting sub-team from 2021 to 2023—in 2022, UBC placed 2nd at the Canadian National Steel Bridge Competition.</p>
+                    <p>During my time with UBC Steel Bridge, I worked with Autodesk AutoCAD and Inventor to create 3D models and drawings for bridge parts, also utilizing Microsoft Excel to calculate distances and part sizes using trigonometric formulae. I was able to integrate into the team well and contributed actively to design discussions.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/sbdt_1.png" alt="Supporting image for Engineering Design Teams (UBC Steel Bridge)." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/sbdt_2.png" alt="Supporting image for Engineering Design Teams (UBC Steel Bridge)." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+
+                    <p>The second is <a href="https://www.ubcorbit.com/" target="_blank">UBC Orbit</a>, a satellite design team with plans to launch a CubeSat into space in 2027. I joined the Attitude and Orbit Control Systems (AOCS) sub-team in 2024, and am currently a member.</p>
+                    <p>With UBC Orbit, I use our team's in-house Python physics simulation and my knowledge of kinematics and classical mechanics to help control the satellite's positioning. The project is very intricate, and I appreciate how everyone's work combines to form a whole that is more than the sum of its parts.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/rbdt_1.png" alt="Supporting image for Engineering Design Teams (UBC Orbit)." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Autodesk AutoCAD/Inventor, 3D Modelling, Engineering Drawings, Python, Zero-Gravity Physics Simulations, Rigid Body Dynamics.</p>
                 </div>
 
                 <button class="project-button">X (Twitter) Pub-Sub Framework</button>
@@ -101,13 +177,37 @@
                     <p>temp</p>
                 </div>
 
-                <button class="project-button">Digital Music Production</button>
+                <button class="project-button">Musical Composition & Production</button>
                 <div class="panel">
                     <p>temp</p>
                 </div>
             </div>
 
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="caption" id="imageCaption"></div>
+                <img class="modal-content" id="enlargedImage">
+            </div>
+
             <script>
+                // Function to open modal
+                function openModal(imgElement) {
+                    var modal = document.getElementById("imageModal");
+                    var modalImg = document.getElementById("enlargedImage");
+                    var captionText = document.getElementById("imageCaption");
+                    
+                    modal.style.display = "block";
+                    modalImg.src = imgElement.src;
+                    captionText.innerHTML = imgElement.alt;
+                }
+
+                // Function to close modal
+                function closeModal() {
+                    var modal = document.getElementById("imageModal");
+                    modal.style.display = "none";
+                }
+
+                // Accordion menu
                 var proj_b = document.getElementsByClassName("project-button");
                 var i;
                 

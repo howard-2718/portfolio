@@ -27,11 +27,14 @@ import * as PIXI from 'pixi.js';
     app.ticker.add(() => {
         timer += 0.05;
 
-        if(window.location.pathname === "/index.html") {
-            wave_y = app.screen.height - 100;
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+
+        if(page === "projects.html") {
+            wave_y = app.screen.height / 2;
         }
         else {
-            wave_y = app.screen.height / 2;
+            wave_y = app.screen.height - 100;
         }
 
         wave.clear();
