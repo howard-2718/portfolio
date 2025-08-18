@@ -34,6 +34,49 @@
             <br>
 
             <div class="project-menu">
+                <button class="project-button">Ultrasonic Levitation for Holographic Imaging</button>
+                <div class="panel">
+                    <p><b>Description:</b> My capstone project, spanning the last two years of my Engineering Physics program. Currently, my team is in the second year of the project.</p>
+                    <p>Building upon the work of previous Engineering Physics students, the purpose of the project is to vary the phase offsets of a grid of transducers, such that the resulting pressure field is capable of levitating small styrofoam beads.</p>
+                    
+                    <p>In a team of four, I am the person primarily responsible for software-related tasks, such as writing scripts to control the transducer grid via keyboard and mouse inputs.</p>
+
+                    <p>To efficiently solve for the phase offsets required to levitate beads, a phase-solving algorithm written in the Rust system language is employed. We also make use of Python and OpenCV for image and video processing.</p>
+
+                    <p>For more details, please refer to our Github repository <a href="https://github.com/howard-2718/ultrasonic-levitation" target="_blank">here</a>.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/capstone_1.png" alt="Supporting image for Ultrasonic Levitation for Holographic Imaging." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/capstone_2.png" alt="Supporting image for Ultrasonic Levitation for Holographic Imaging." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> Python, Rust, Phase Solver Algorithms, Blender, Soldering, Circuit/PCB Design, FPGA Design, Serial Communication.</p>
+                </div>
+
+                <button class="project-button">Franka Emika Robot Impedance Controller</button>
+                <div class="panel">
+                    <p><b>Description:</b> The final project of my introductory robotics course, completed as a group of five. We succesfully programmed an impedance controller for the Franka Emika 7-DOF robotic arm, as simulated in ROS.</p>
+                    
+                    <p>Using our controller, the robot is capable of prescribing a set force with which to press upon objects in its working range, in both the normal and tangential directions. It does so by solving a second-order matrix ODE for the required angular rates of change in the arm's joints.</p>
+                    
+                    <p>I was responsible for setting up the ROS environment in Linux (which proved to be somewhat non-trivial), as well as prescribing the robot end-effector orientation. I also assisted in writing and proofreading the final report.</p>
+                    
+                    <div class="images">
+                        <hr>
+                        <img src="images/femic_1.png" alt="Supporting image for Franka Emika Robot Impedance Controller." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/femic_2.png" alt="Supporting image for Franka Emika Robot Impedance Controller." onclick="openModal(this)" />
+                        <hr>
+                        <img src="images/femic_3.png" alt="Supporting image for Franka Emika Robot Impedance Controller." onclick="openModal(this)" />
+                        <hr>
+                    </div>
+                    
+                    <p><b>Relevant Skills:</b> ROS + Gazebo, Linux, Bash, Robot Kinematics/Dynamics (Trajectory/Force Control), Denavit-Hartenberg Parameters, Data Collection and Analysis (Python).</p>                 
+                </div>
+
                 <button class="project-button">Japanese Language-Learning Blog</button>
                 <div id="jznr" class="panel">
                     <p><b>Description:</b> An individual project, designing a website using the VitePress static site generator to host a blog dedicated to Japanese language acquisition.</p>
@@ -72,7 +115,7 @@
                         <hr>
                     </div>
                     
-                    <p><b>Relevant Skills:</b> Python, Image Processing, Deep Learning, PID, CNNs, OpenCV, PyQt, NumPy, OCR, Linux + Bash.</p>                 
+                    <p><b>Relevant Skills:</b> Python, Image Processing, Deep Learning, PID, CNNs, OpenCV, PyQt, NumPy, OCR, ROS + Gazebo, Linux, Bash.</p>                 
                 </div>
 
                 <button class="project-button">Autonomous Tape-Following Robot</button>
